@@ -1,7 +1,15 @@
-h1 {
-  color: powderblue;
-  font-weight: 100;
-  background-color: aqua;
-  text-align: center;
-  margin: 0 auto;
+ul {
+  list-style-type: none;
+  display: table-row;
+}
+
+.include-credits {
+  max-width: 520px;
+  margin: 30px auto;
+}
+
+.weather-app {
+  padding: 25px;
+  border: 1px solid gainsboro;
+  border-radius: 7px;
 }

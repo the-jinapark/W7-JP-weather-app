@@ -12,10 +12,115 @@
       integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
       crossorigin="anonymous"
     />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/27366fc312.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <div class="container">
-      <h1>Hello World</h1>
+      <div class="include-credits">
+        <div class="weather-app">
+          <p>What's the weather like in...</p>
+          <form>
+            <input type="text" placeholder="Enter a city" autocomplete="off" />
+            <input type="submit" value="Search" />
+          </form>
+          <a href="#" class="current-location-link" id="current-location-link"
+            >Want to know the weather in your current location?
+          </a>
+          <h1>Porto</h1>
+          <ul>
+            <li>
+              <span id="today-weekday-name">Friday</span>
+              <span id="today-time">07:45</span>
+            </li>
+            <li>
+              <span id="today-weather-description">Sunny</span>
+            </li>
+          </ul>
+          <div class="row">
+            <div class="col md-6">
+              <img src="#" alt="Sunny icon" />
+              <p>19°C | °F</p>
+            </div>
+            <div class="col md-6">
+              <ul>
+                <li>Humidity: 0 %</li>
+                <li>Wind: 4 km/h</li>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col md-8">This week</div>
+          </div>
+          <div class="row">
+            <div class="col md-2" class="weekday-icon" id="day-1-icon">
+              <img src="#" />
+            </div>
+            <div class="col md-2" class="weekday-icon" id="day-2-icon">
+              <img src="#" />
+            </div>
+            <div class="col md-2" class="weekday-icon" id="day-3-icon">
+              <img src="#" />
+            </div>
+            <div class="col md-2" class="weekday-icon" id="day-4-icon">
+              <img src="#" />
+            </div>
+            <div class="col md-2" class="weekday-icon" id="day-5-icon">
+              <img src="#" />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col md-2" id="day-1-name">Saturday</div>
+            <div class="col md-2" id="day-2-name">Sunday</div>
+            <div class="col md-2" id="day-3-name">Monday</div>
+            <div class="col md-2" id="day-4-name">Tuesday</div>
+            <div class="col md-2" id="day-5-name">Wednesday</div>
+          </div>
+          <div class="row">
+            <div class="col md-2">
+              <span class="weekday-high-temp" id="day-1-high-temp">21°</span>
+              <span class="weekday-low-temp" id="day-1-low-temp"> 13°</span>
+            </div>
+            <div class="col md-2">
+              <span class="weekday-high-temp" id="day-2-high-temp">21°</span>
+              <span class="weekday-low-temp" id="day-2-low-temp"> 13°</span>
+            </div>
+            <div class="col md-2">
+              <span class="weekday-high-temp" id="day-3-high-temp">21°</span>
+              <span class="weekday-low-temp" id="day-3-low-temp"> 13°</span>
+            </div>
+            <div class="col md-2">
+              <span class="weekday-high-temp" id="day-4-high-temp">21°</span>
+              <span class="weekday-low-temp" id="day-4-low-temp"> 13°</span>
+            </div>
+            <div class="col md-2">
+              <span class="weekday-high-temp" id="day-5-high-temp">21°</span>
+              <span class="weekday-low-temp" id="day-5-low-temp"> 13°</span>
+            </div>
+          </div>
+        </div>
+        <small class="credits">
+          <a
+            href="https://github.com/the-jinapark/W7-JP-weather-app"
+            target="_blank"
+            >Open-source code</a
+          >
+          by
+          <a
+            href="https://www.shecodesfoundation.org/candidates/jina-park-south-korean"
+            target="_blank"
+            >Jina Park</a
+          >
+          for the
+          <a href="https://www.shecodes.io/plus" target="_blank"
+            >SheCodes Plus</a
+          >
+          workshop
+        </small>
+      </div>
     </div>
     <script src="src/index.js"></script>
   </body>
